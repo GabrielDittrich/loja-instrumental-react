@@ -1,0 +1,15 @@
+.bg-image {
+  background-image: url('/imagens/rock.png');
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.titulo-principal {
+  background-color: red;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
