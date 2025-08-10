@@ -1,12 +1,56 @@
-# React + Vite
+# 🎸 Estúdio Musical - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido em React para uma loja fictícia de instrumentos musicais. O objetivo é praticar conceitos de front-end moderno, componentes reutilizáveis, estilização com Bootstrap e organização de projeto escalável.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- HTML5 + CSS3
 
-## Expanding the ESLint configuration
+## 📁 Estrutura Inicial
+<pre>
+  /src
+├── /components
+│ └── /Cards
+│ ├── GuitarCard.jsx
+│ └── (BaixoCard em desenvolvimento)
+├── App.jsx
+└── main.jsx
+</pre>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 💡 Funcionalidades até o momento
+
+- Componente `GuitarCard` que exibe informações da guitarra (imagem, nome, descrição, preço e botão de ação)
+- Layout responsivo utilizando Bootstrap
+- Estrutura modular e preparada para adicionar outros tipos de instrumentos (ex: baixos)
+
+## 🛠️ Como executar o projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/loja-instrumental-react.git
+
+2. Acesse a pasta:
+  ```bash
+    cd loja-instrumental-react
+```
+3.  Instale as dependências:
+  ```bash
+  npm install
+```
+Execute o projeto:
+  ```bash
+npm run dev
+```
+
+## 📌 Próximos passos
+- Criar outros components Card
+- Implementar sistema de carrinho
+- Adicionar filtros e categorias
+
+## 📷 Prévia
+![estudio-musical](https://github.com/user-attachments/assets/e9ad10a1-3c48-4615-a5d8-112fd01dc4de)
+
