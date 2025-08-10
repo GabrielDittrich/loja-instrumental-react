@@ -4,7 +4,7 @@ export default function Header() {
     <header>
       <div className="bg-image text-white d-flex align-items-center">
         <div className="container text-center">
-          <h1 className="titulo-principal">Rock Day</h1>
+          <h1 className="titulo-principal">Estúdio Musical</h1>
         </div>
       </div>
 
