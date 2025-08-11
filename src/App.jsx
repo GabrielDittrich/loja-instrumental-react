@@ -1,10 +1,11 @@
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-import GuitarCard from './components/Cards/GuitarCard';
-import { guitarras } from './data/guitarras';
+import Card from './components/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { baixos } from './data/baixos';
-import BaixoCard from './components/Cards/BaixoCard';
+import { isCategory } from './utils/isCategory'
+
+import { produtos } from './data/produtos';
+import { destaques } from './data/destaques';
 
 function App() {
   return (
@@ -17,17 +18,32 @@ function App() {
             <section className="container my-5">
               <h2>Destaques</h2>
               <div className="row">
-                {guitarras.map((guitarra, index) => (
-                  <GuitarCard key={index} guitarra={guitarra} />
-                ))}
+                {produtos
+                  .filter(p =>
+                    destaques.guitarras.includes(p.id) ||
+                    destaques.contrabaixos.includes(p.id)
+                  )
+                  .map(p => <Card key={p.id} produto={p} />)}
+              </div>
+            </section>
+            <section className="container my-5">
+              <h2>Guitarras</h2>
+              <div className="row">
+                {produtos
+                  .filter(isCategory('guitarras'))
+                  .map(produto => (
+                    <Card key={produto.id} produto={produto} />
+                  ))}
               </div>
             </section>
             <section className="container my-5">
               <h2>Baixos</h2>
               <div className="row">
-                {baixos.map((baixo, index) => (
-                  <BaixoCard key={index} baixo={baixo} />
-                ))}
+                {produtos
+                  .filter(isCategory('contrabaixos'))
+                  .map(produto => (
+                    <Card key={produto.id} produto={produto} />
+                  ))}
               </div>
             </section>
           </article>
