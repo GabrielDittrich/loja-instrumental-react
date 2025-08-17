@@ -35,7 +35,7 @@ Projeto desenvolvido em React para uma loja fictícia de instrumentos musicais. 
 
 1. Clone o repositório:
   ```bash
-   git clone https://github.com/seu-usuario/loja-instrumental-react.git
+   git clone https://github.com/GabrielDittrich/loja-instrumental-react.git
 ```
 2. Acesse a pasta:
   ```bash
