@@ -13,3 +13,23 @@
   border-radius: 0.5rem;
   display: inline-block;
 }
+
+/* Faz o dropdown abrir no hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Deixa o "Categoria" igual ao "Inicio" e "Sobre" */
+/* Garante que Inicio, Categoria e Sobre fiquem alinhados */
+.navbar .navbar-brand,
+.navbar .navbar-brand.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  color: inherit;
+}
+
+

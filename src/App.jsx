@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar';
 import Card from './components/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { isCategory } from './utils/isCategory'
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 import { produtos } from './data/produtos';
 import { destaques } from './data/destaques';
