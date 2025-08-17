@@ -36,14 +36,14 @@ export default function Header() {
                     className="dropdown-menu"
                     aria-labelledby="categoriaMenu"
                   >
-                    <li><a className="dropdown-item" href="#">Guitarra</a></li>
-                    <li><a className="dropdown-item" href="#">Contrabaixo</a></li>
-                    <li><a className="dropdown-item" href="#">Bateria</a></li>
+                    <li><a className="dropdown-item" href="#guitarras">Guitarras</a></li>
+                    <li><a className="dropdown-item" href="#contrabaixos">Contrabaixos</a></li>
+                    <li><a className="dropdown-item" href="#baterias">Baterias</a></li>
                   </ul>
                 </div>
 
                 <a className="navbar-brand" href="#">
-                  Sobre
+                  Contato
                 </a>
               </div>
             </div>

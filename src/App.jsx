@@ -1,10 +1,10 @@
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Card from './components/Card';
+import Footer from './components/Footer.jsx'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { isCategory } from './utils/isCategory'
+import { isCategory } from './utils/isCategory';
 import "bootstrap-icons/font/bootstrap-icons.css";
-
 import { produtos } from './data/produtos';
 import { destaques } from './data/destaques';
 
@@ -17,7 +17,7 @@ function App() {
         <main style={{ flex: 1 }}>
           <article>
             <section className="container my-5">
-              <h2>Destaques</h2>
+              <h2 id='destaques'>Destaques</h2>
               <div className="row">
                 {produtos
                   .filter(p =>
@@ -28,7 +28,7 @@ function App() {
               </div>
             </section>
             <section className="container my-5">
-              <h2>Guitarras</h2>
+              <h2 id='guitarras'>Guitarras</h2>
               <div className="row">
                 {produtos
                   .filter(isCategory('guitarras'))
@@ -38,7 +38,7 @@ function App() {
               </div>
             </section>
             <section className="container my-5">
-              <h2>Baixos</h2>
+              <h2 id='contrabaixos'>Baixos</h2>
               <div className="row">
                 {produtos
                   .filter(isCategory('contrabaixos'))
@@ -51,6 +51,7 @@ function App() {
         </main>
         <Sidebar />
       </div>
+      <Footer /> 
     </>
   );
 }

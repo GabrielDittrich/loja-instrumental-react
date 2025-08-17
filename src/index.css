@@ -1,3 +1,9 @@
+/* index.css */
+
+html {
+  scroll-behavior: smooth;
+}
+
 .bg-image {
   background-image: url('/imagens/estudio.png');
   height: 300px;
@@ -31,5 +37,3 @@
   font-size: 1rem;
   color: inherit;
 }
-
-
