@@ -11,11 +11,15 @@ Projeto desenvolvido em React para uma loja fictícia de instrumentos musicais. 
 
 ## 📁 Estrutura Inicial
 <pre>
-  /src
+/public
+└── /imagens
+  └── /Guitarras
+  └── /Contrabaixos
+/src
 ├── /components
-│ └── /Cards
-│ ├── GuitarCard.jsx
-│ └── (BaixoCard em desenvolvimento)
+│ └── Card.jsx
+│ ├── Header.jsx
+│ └── Sidebar.jsx
 ├── App.jsx
 └── main.jsx
 </pre>
@@ -23,16 +27,16 @@ Projeto desenvolvido em React para uma loja fictícia de instrumentos musicais. 
 
 ## 💡 Funcionalidades até o momento
 
-- Componente `GuitarCard` que exibe informações da guitarra (imagem, nome, descrição, preço e botão de ação)
+- Componente `Card` que exibe informações do produto (imagem, nome, descrição, preço e botão de ação)
 - Layout responsivo utilizando Bootstrap
 - Estrutura modular e preparada para adicionar outros tipos de instrumentos (ex: baixos)
 
 ## 🛠️ Como executar o projeto
 
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/loja-instrumental-react.git
-
+  ```bash
+   git clone https://github.com/GabrielDittrich/loja-instrumental-react.git
+```
 2. Acesse a pasta:
   ```bash
     cd loja-instrumental-react
