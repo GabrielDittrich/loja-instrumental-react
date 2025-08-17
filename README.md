@@ -13,13 +13,18 @@ Projeto desenvolvido em React para uma loja fictícia de instrumentos musicais. 
 <pre>
 /public
 └── /imagens
-  └── /Guitarras
+  ├── /Guitarras
   └── /Contrabaixos
 /src
 ├── /components
-│ └── Card.jsx
-│ ├── Header.jsx
-│ └── Sidebar.jsx
+│   ├── Card.jsx
+│   ├── Header.jsx
+│   └── Sidebar.jsx
+├── /data
+│   ├── destraques.js 
+│   └── produtos.js
+├── /utils
+│   └── isCategory.js  
 ├── App.jsx
 └── main.jsx
 </pre>
